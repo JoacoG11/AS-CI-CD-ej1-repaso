@@ -4,7 +4,7 @@ on: push
 
 jobs:
   lint:
-    runs-on: ubuntu-latets
+    runs-on: ubuntu-latest
 
     permissions:
       security-events: write
