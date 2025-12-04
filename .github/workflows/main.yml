@@ -1,6 +1,9 @@
 name: Ejecutar Tests
 
-on: push
+on:
+  push:
+    branches: 
+      - main
 
 jobs:
   run-tests:
