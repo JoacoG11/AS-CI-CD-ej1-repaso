@@ -1,0 +1,17 @@
+name: Ejecutar tests
+
+on: push
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latets
+
+    steps:
+      - name: Descargar Codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Ejecutar tests
+        run: pytest
